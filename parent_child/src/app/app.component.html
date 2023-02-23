@@ -1,0 +1,15 @@
+<!-- here i am assigning parent data to child data to the variable(inputNumber1) throught property binding -->
+<div class="container">
+  <h2>This is child component</h2>
+  <label>Enter First Number :</label>
+  <input class="input1" type="number" [(ngModel)]="parentData1" /><br /><br />
+  <label>Enter Second Number:</label>
+  <input type="number" [(ngModel)]="parentData2" /><br />
+  <app-child
+    [inputNumber1]="parentData1"
+    [inputNumber2]="parentData2"
+    (sendData)="receivedDataFromChild($event)"
+  ></app-child>
+  <p>Data Returned to Parent After Manipulation:{{ receivedData }}</p>
+  <p></p>
+</div>

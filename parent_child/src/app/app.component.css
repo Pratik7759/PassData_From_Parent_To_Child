@@ -1,0 +1,17 @@
+.container {
+  border: 1px solid black;
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 13%;
+  background-color: azure;
+  padding: 25px;
+
+}
+.input1 {
+  margin-left: 13px;
+}
+p {
+  margin-left: -8px;
+}
